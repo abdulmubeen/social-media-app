@@ -23,6 +23,7 @@ const authSlice = createSlice({
       state.token = null;
     },
     setFriends: (state, action) => {
+      console.log("Entered");
       if (state.user) {
         state.user.friends = action.payload.friends;
       } else {
